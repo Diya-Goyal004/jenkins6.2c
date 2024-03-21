@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "fetching the source code from the directory path specified by the environment variable: ${env.DIRECTORY_PATH}"
+                echo "fetch the source code from the directory path specified by the environment variable: ${env.DIRECTORY_PATH}"
                 echo "Compiling the code and generating any necessary artifacts, updated"
                 echo "updated new commit"
             }
