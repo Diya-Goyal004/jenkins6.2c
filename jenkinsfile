@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         DIRECTORY_PATH = "https://github.com/PragatiKuchhal/Task-3.2C.git"
-        TESTING_ENVIRONMENT = "Pragati Kuchhal"
-        PRODUCTION_ENVIRONMENT = "Pragati"
+        TESTING_ENVIRONMENT = "Diya Goyal"
+        PRODUCTION_ENVIRONMENT = "Diya"
     }
 
     stages {
@@ -25,13 +25,13 @@ pipeline {
                 success {
                     emailext  subject: 'Unit Test Status - Success', 
                               body: 'Unit Test has been completed successfully.', 
-                              to: "pragati4823.be22@chitkara.edu.in",
+                              to: "diyagoyal4878.be22@chitkara.edu.in",
                               attachLog: true
                 }
                 failure {
                     emailext subject: 'Unit Test Status - Failure', 
                               body: 'Unit Test has failed.', 
-                              to: "pragati4823.be22@chitkara.edu.in",
+                              to: "diyagoyal4878.be22@chitkara.edu.in",
                               attachLog: true
                 }
             }
@@ -54,13 +54,13 @@ pipeline {
                 success {
                     emailext  subject: 'Security Scan Status - Success', 
                               body: 'Security Scan has been completed successfully.', 
-                              to: "pragati4823.be22@chitkara.edu.in",
+                              to: "diyagoyal4878.be22@chitkara.edu.in",
                               attachLog: true
                 }
                 failure {
                     emailext subject: 'Security Scan Status - Failure', 
                               body: 'Security Scan has failed.', 
-                              to: "pragati4823.be22@chitkara.edu.in",
+                              to: "diyagoyal4878.be22@chitkara.edu.in",
                               attachLog: true
                 }
             }
